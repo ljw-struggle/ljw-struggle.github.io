@@ -29,6 +29,15 @@
 			small:   [ '481px',   '736px'  ],
 			xsmall:  [ null,      '480px'  ],
 		});
+	
+	// Footer.
+		breakpoints.on('<=medium', function() {
+			$footer.insertAfter($main);
+		});
+
+		breakpoints.on('>medium', function() {
+			$footer.appendTo($header);
+		});
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
@@ -49,15 +58,6 @@
 				}, 0);
 
 		}
-
-	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-		});
-
-		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
-		});
 
 	// Header.
 
