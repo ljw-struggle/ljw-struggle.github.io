@@ -29,25 +29,6 @@
 			small:   [ '481px',   '736px'  ],
 			xsmall:  [ null,      '480px'  ],
 		});
-	
-	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-preload');
-				}, 100);
-			});
-		});
-
-		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-preload');
-				}, 100);
-			});
-		});
 
 	// // Play initial animations on page load.
 	// 	$window.on('load', function() {
@@ -68,6 +49,25 @@
 				}, 0);
 
 		}
+
+	// Footer.
+		breakpoints.on('<=medium', function() {
+			$footer.insertAfter($main);
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-preload');
+				}, 100);
+			});
+		});
+
+		breakpoints.on('>medium', function() {
+			$footer.appendTo($header);
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-preload');
+				}, 100);
+			});
+		});
 
 	// Header.
 
