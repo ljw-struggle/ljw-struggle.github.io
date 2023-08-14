@@ -10,3 +10,7 @@ Jiawei's Homepage.
 > [APlayer](https://aplayer.js.org/#/)
 
 > [busuanzi](https://busuanzi.ibruce.info/)
+
+> [Ezgif](https://ezgif.com/video-to-gif)
+
+> [mbizhi](https://mbizhi.cheetahfun.com/sj/md297133.html)
